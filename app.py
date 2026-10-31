@@ -52,10 +52,8 @@ st.write(
 # Sidebar
 st.sidebar.title("Dashboard Settings")
 
-uploaded_file = st.sidebar.file_uploader(
-    "Upload Bitcoin CSV File",
-    type=["csv"]
-)
+uploaded_file = "bitcoin_data.csv"
+ 
 
 # Load data
 if uploaded_file is not None:
